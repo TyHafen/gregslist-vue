@@ -19,27 +19,29 @@
 
 
 <script>
-import { AppState } from "../AppState";
-import { computed, reactive, onMounted } from "vue";
-export default {
-  props: {
-    car: {
-      type: Object,
-      required: true,
+  import { AppState } from "../AppState";
+  import { computed, reactive, onMounted } from "vue";
+  export default {
+    props: {
+      car: {
+        type: Object,
+        required: true,
+      },
     },
-  },
-  setup() {
-    return {};
-  },
-};
+    setup() {
+      return {};
+
+    },
+  };
 </script>
 
 
 <style lang="scss" scoped>
-.car {
-  transition: all 0.2s ease;
-}
-.car:hover {
-  transform: scale(1.03);
-}
+  .car {
+    transition: all 0.2s ease;
+  }
+
+  .car:hover {
+    transform: scale(1.03);
+  }
 </style>
